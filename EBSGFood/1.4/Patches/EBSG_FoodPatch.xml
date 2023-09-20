@@ -6,13 +6,13 @@
     </Operation>
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/XenotypeDef/genes/li[text()="StrongStomach"]/exclusionTags</xpath>
+        <xpath>Defs/GeneDef[defName="StrongStomach"]/exclusionTags</xpath>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/XenotypeDef/genes/li[text()="StrongStomach"]/exclusionTags</xpath>
+            <xpath>Defs/GeneDef[defName="StrongStomach"]/exclusionTags</xpath>
             <value><li>EBSG_StrongStomachs</li></value>
         </match>
         <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/XenotypeDef/genes/li[text()="StrongStomach"]</xpath>
+            <xpath>Defs/GeneDef[defName="StrongStomach"]</xpath>
             <value>
                 <exclusionTags>
                     <li>EBSG_StrongStomachs</li>
