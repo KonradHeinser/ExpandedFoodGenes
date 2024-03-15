@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>EBSG_ResistantStomach</defName>
+        <label>resistant stomach</label>
+        <description>Carriers of this gene have an extra toxin-filtering organ in their stomach that makes it a lot more durable against potential food poisoning.</description>
+        <iconPath>UI/Icons/Genes/Gene_StrongStomach</iconPath>
+        <foodPoisoningChanceFactor>0.33</foodPoisoningChanceFactor>
+        <biostatMet>-2</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>8.9</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dura</symbol></li>
+                <li><symbol>eat</symbol></li>
+                <li><symbol>feed</symbol></li>
+                <li><symbol>cram</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>vore</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StrongStomachs</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_DurableStomach</defName>
+        <label>durable stomach</label>
+        <description>Carriers of this gene have an extra toxin-filtering organ in their stomach that makes it more durable against potential food poisoning.</description>
+        <iconPath>UI/Icons/Genes/Gene_StrongStomach</iconPath>
+        <foodPoisoningChanceFactor>0.66</foodPoisoningChanceFactor>
+        <biostatMet>-1</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>8.8</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dura</symbol></li>
+                <li><symbol>eat</symbol></li>
+                <li><symbol>feed</symbol></li>
+                <li><symbol>cram</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>vore</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StrongStomachs</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_FlimsyStomach</defName>
+        <label>flimsy stomach</label>
+        <description>Carriers of this gene have a digestive system that cannot process toxins properly, making them slightly more weak against potential food poisoning.</description>
+        <iconPath>EBSG/Gene_WeakStomach</iconPath>
+        <foodPoisoningChanceFactor>1.5</foodPoisoningChanceFactor>
+        <biostatMet>1</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>8.7</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>fast</symbol></li>
+                <li><symbol>vomit</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>sick</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StrongStomachs</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_FrailStomach</defName>
+        <label>frail stomach</label>
+        <description>Carriers of this gene have a digestive system that cannot process toxins properly, making them more weak against potential food poisoning.</description>
+        <iconPath>EBSG/Gene_WeakStomach</iconPath>
+        <foodPoisoningChanceFactor>2</foodPoisoningChanceFactor>
+        <biostatMet>2</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>8.6</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>fast</symbol></li>
+                <li><symbol>vomit</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>sick</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StrongStomachs</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_VulnerableStomach</defName>
+        <label>vulnerable stomach</label>
+        <description>Carriers of this gene have a digestive system that cannot process toxins properly, making them very weak against potential food poisoning.</description>
+        <iconPath>EBSG/Gene_WeakStomach</iconPath>
+        <foodPoisoningChanceFactor>2.5</foodPoisoningChanceFactor>
+        <biostatMet>3</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>8.5</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>fast</symbol></li>
+                <li><symbol>vomit</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>sick</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StrongStomachs</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_CavernousStomach</defName>
+        <label>cavernous stomach</label>
+        <description>Carriers of this gene have large pouches attached to their stomach that can help store a lot more food in exchange for inhibiting their stomach's ability to digest properly.</description>
+        <iconPath>EBSG/Gene_ExpandedStomach</iconPath>
+        <biostatMet>-3</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>9.6</displayOrderInCategory>
+        <statFactors>
+            <MaxNutrition>2.5</MaxNutrition>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>multi</symbol></li>
+                <li><symbol>pouch</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StomachPouches</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_ExpandedStomach</defName>
+        <label>expanded stomach</label>
+        <description>Carriers of this gene have pouches attached to their stomach that can help store more food in exchange for inhibiting their stomach's ability to digest properly.</description>
+        <iconPath>EBSG/Gene_ExpandedStomach</iconPath>
+        <biostatMet>-2</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>9.5</displayOrderInCategory>
+        <statFactors>
+            <MaxNutrition>2.0</MaxNutrition>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>multi</symbol></li>
+                <li><symbol>pouch</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StomachPouches</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_BiggerStomach</defName>
+        <label>bigger stomach</label>
+        <description>Carriers of this gene have little pouches attached to their stomach that can help store more food in exchange for inhibiting their stomach's ability to digest properly.</description>
+        <iconPath>EBSG/Gene_ExpandedStomach</iconPath>
+        <biostatMet>-1</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>9.4</displayOrderInCategory>
+        <statFactors>
+            <MaxNutrition>1.5</MaxNutrition>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>multi</symbol></li>
+                <li><symbol>pouch</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StomachPouches</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_SmallerStomach</defName>
+        <label>smaller stomach</label>
+        <description>Carriers of this gene have little pouches attached to their stomach that can help digest food more efficiently in exchange for taking up room that would normally be used to store food.</description>
+        <iconPath>EBSG/Gene_ContractedStomach</iconPath>
+        <biostatMet>1</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>9.3</displayOrderInCategory>
+        <statFactors>
+            <MaxNutrition>0.8</MaxNutrition>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>effic</symbol></li>
+                <li><symbol>absorb</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StomachPouches</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_ContractedStomach</defName>
+        <label>contracted stomach</label>
+        <description>Carriers of this gene have pouches attached to their stomach that can help digest food more efficiently in exchange for taking up room that would normally be used to store food.</description>
+        <iconPath>EBSG/Gene_ContractedStomach</iconPath>
+        <biostatMet>2</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>9.2</displayOrderInCategory>
+        <statFactors>
+            <MaxNutrition>0.6</MaxNutrition>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>effic</symbol></li>
+                <li><symbol>absorb</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StomachPouches</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>EBSG_NarrowStomach</defName>
+        <label>narrow stomach</label>
+        <description>Carriers of this gene have large pouches attached to their stomach that can help digest food more efficiently in exchange for taking up room that would normally be used to store food.</description>
+        <iconPath>EBSG/Gene_ContractedStomach</iconPath>
+        <biostatMet>3</biostatMet>
+        <displayCategory>EBSG_Food</displayCategory>
+        <displayOrderInCategory>9.1</displayOrderInCategory>
+        <statFactors>
+            <MaxNutrition>0.4</MaxNutrition>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>effic</symbol></li>
+                <li><symbol>absorb</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_StomachPouches</li>
+        </exclusionTags>
+    </GeneDef>
+</Defs>

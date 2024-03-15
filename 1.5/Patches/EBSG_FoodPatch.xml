@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GeneDef[defName="StrongStomach"]/biostatMet</xpath>
+        <value><biostatMet>-3</biostatMet></value>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="StrongStomach"]/exclusionTags</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="StrongStomach"]/exclusionTags</xpath>
+            <value><li>EBSG_StrongStomachs</li></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="StrongStomach"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>EBSG_StrongStomachs</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/XenotypeDef/genes/li[text()="StrongStomach"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/XenotypeDef/genes/li[text()="StrongStomach"]</xpath>
+            <value>
+                <li>StrongStomach</li>
+                <li>EBSG_ContractedStomach</li>
+            </value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneCategoryDef[defName="AG_FoodConsumption"]</xpath>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_ResistantStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_DurableStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_FlimsyStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_FrailStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_VulnerableStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_CavernousStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_ExpandedStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_BiggerStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_SmallerStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_ContractedStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="EBSG_NarrowStomach"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[@Name="EBSG_EatingSpeedBase"]/displayCategory</xpath>
+                    <value><displayCategory>AG_FoodConsumption</displayCategory></value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/GeneDef[defName="AG_FrailStomach"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+                    <value><hideGene>true</hideGene></value>
+                </li>
+            </operations>
+        </match>
+        <nomatch Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+	                    <GeneCategoryDef>
+		                    <defName>EBSG_Food</defName>
+		                    <label>eating</label>
+		                    <displayPriorityInXenotype>500.01</displayPriorityInXenotype>
+	                    </GeneCategoryDef>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/GeneDef[defName="StrongStomach"]/displayCategory</xpath>
+                    <value><displayCategory>EBSG_Food</displayCategory></value>
+                </li>
+            </operations>
+        </nomatch>
+    </Operation>
+</Patch>
