@@ -197,7 +197,7 @@
         <displayCategory>EBSG_Food</displayCategory>
         <displayOrderInCategory>9.3</displayOrderInCategory>
         <statFactors>
-            <MaxNutrition>0.8</MaxNutrition>
+            <MaxNutrition>0.9</MaxNutrition>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
@@ -219,7 +219,7 @@
         <displayCategory>EBSG_Food</displayCategory>
         <displayOrderInCategory>9.2</displayOrderInCategory>
         <statFactors>
-            <MaxNutrition>0.6</MaxNutrition>
+            <MaxNutrition>0.8</MaxNutrition>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
@@ -241,7 +241,7 @@
         <displayCategory>EBSG_Food</displayCategory>
         <displayOrderInCategory>9.1</displayOrderInCategory>
         <statFactors>
-            <MaxNutrition>0.4</MaxNutrition>
+            <MaxNutrition>0.7</MaxNutrition>
         </statFactors>
         <symbolPack>
             <prefixSymbols>
