@@ -22,9 +22,9 @@
     </Operation>
 
     <Operation Class="PatchOperationConditional">
-        <xpath>Defs/XenotypeDef/genes/li[text()="StrongStomach"]</xpath>
+        <xpath>Defs/XenotypeDef[defName="Pigskin"]/genes/li[text()="StrongStomach"]</xpath>
         <match Class="PatchOperationReplace">
-            <xpath>Defs/XenotypeDef/genes/li[text()="StrongStomach"]</xpath>
+            <xpath>Defs/XenotypeDef[defName="Pigskin"]/genes/li[text()="StrongStomach"]</xpath>
             <value>
                 <li>StrongStomach</li>
                 <li>EBSG_ContractedStomach</li>
