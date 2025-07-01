@@ -85,7 +85,7 @@
                     <value><displayCategory>AG_FoodConsumption</displayCategory></value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs/GeneDef[defName="AG_FrailStomach"]/modExtensions/li[@Class="VanillaGenesExpanded.GeneExtension"]</xpath>
+                    <xpath>Defs/GeneDef[defName="AG_FrailStomach"]/modExtensions/li[@Class="VEF.Genes.GeneExtension"]</xpath>
                     <value><hideGene>true</hideGene></value>
                 </li>
             </operations>
