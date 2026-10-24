@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef Name="EBSG_EatingSpeedBase" Abstract="True">
+        <displayCategory>EBSG_Food</displayCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dura</symbol></li>
+                <li><symbol>eat</symbol></li>
+                <li><symbol>feed</symbol></li>
+                <li><symbol>cram</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>vore</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <exclusionTags>
+            <li>EBSG_EatingSpeed</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_TerribleEatingSpeed</defName>
+        <label>very slow eating speed</label>
+        <iconPath>EBSG/Gene_TerribleEatingSpeed</iconPath>
+        <description>Carriers of this gene have extreme issues eating food due to issues with their teeth. This means they will need to spend more time on break to consume their food.</description>
+        <displayOrderInCategory>11</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <EatingSpeed>0.33</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_BadEatingSpeed</defName>
+        <label>slow eating speed</label>
+        <iconPath>EBSG/Gene_BadEatingSpeed</iconPath>
+        <description>Carriers of this gene have issues eating food due to issues with their teeth. This means they will need to spend more time on break to consume their food.</description>
+        <displayOrderInCategory>12</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <statFactors>
+            <EatingSpeed>0.67</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_MinorEatingSpeed</defName>
+        <label>somewhat fast eating speed</label>
+        <iconPath>EBSG/Gene_EatingSpeed</iconPath>
+        <description>Carriers of this gene have slightly improved eating speed due to strong and sharp teeth, decreasing the amount of time they spend during their break eating food.</description>
+        <displayOrderInCategory>13</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <statFactors>
+            <EatingSpeed>1.50</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_EatingSpeed</defName>
+        <label>fast eating speed</label>
+        <iconPath>EBSG/Gene_EatingSpeed</iconPath>
+        <description>Carriers of this gene have improved eating speed due to strong and sharp teeth, decreasing the amount of time they spend during their break eating food.</description>
+        <displayOrderInCategory>14</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <EatingSpeed>2.00</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_MajorEatingSpeed</defName>
+        <label>very fast eating speed</label>
+        <iconPath>EBSG/Gene_EatingSpeed</iconPath>
+        <description>Carriers of this gene have significantly improved eating speed due to strong and sharp teeth, decreasing the amount of time they spend during their break eating food.</description>
+        <displayOrderInCategory>15</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <EatingSpeed>2.50</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_ExtremeEatingSpeed</defName>
+        <label>extremely fast eating speed</label>
+        <iconPath>EBSG/Gene_ExtremeEatingSpeed</iconPath>
+        <description>Carriers of this gene have extremely improved eating speed due to strong and sharp teeth, decreasing the amount of time they spend during their break eating food.</description>
+        <displayOrderInCategory>16</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <statFactors>
+            <EatingSpeed>3.00</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_SuperEatingSpeed</defName>
+        <label>super fast eating speed</label>
+        <iconPath>EBSG/Gene_ExtremeEatingSpeed</iconPath>
+        <description>Carriers of this gene have super improved eating speed due to strong and sharp teeth, decreasing the amount of time they spend during their break eating food.</description>
+        <displayOrderInCategory>17</displayOrderInCategory>
+        <biostatMet>-5</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EatingSpeed>3.50</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_EatingSpeedBase">
+        <defName>EBSG_HyperEatingSpeed</defName>
+        <label>hyper fast eating speed</label>
+        <iconPath>EBSG/Gene_ExtremeEatingSpeed</iconPath>
+        <description>Carriers of this gene can consume food unbelievably quickly due to how strong and sharp their teeth are. I mean physics defyingly quick. Like, how?</description>
+        <displayOrderInCategory>18</displayOrderInCategory>
+        <biostatMet>-6</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <statFactors>
+            <EatingSpeed>4.00</EatingSpeed>
+        </statFactors>
+    </GeneDef>
+</Defs>
